@@ -1,0 +1,202 @@
+<!-- Kelvin James A. Beliber
+     CMSC 100 U-4L
+     2022-06090
+     Exercise 2 - HTML and CSS -->
+
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Controls view layout when opened the html file on other devices -->
+    <title>My Portfolio</title>
+    <style>
+
+        /* global styling */
+        body {
+            font-family: Arial, sans-serif; /* set font family */
+            font-style: italic; /* set font style */
+            font-size: 20px; /* set font size */
+            margin: 0; /* remove default margin */
+            padding: 0; /* remove default padding */
+            background-image: url('Windows.jpg'); /* source: Windows 11 Default Wallpaper */
+            background-size: cover; /* cover the entire viewport */
+            background-position: center; /* center the background image */
+            background-repeat: no-repeat; /* do not repeat the background image */
+        }
+
+
+        /* header styling */
+        header {
+            background-color: #333; /* set background color */
+            color: #fff; /* set text color */
+            padding: 20px; /* add padding */
+            text-align: center; /* center align text */
+        }
+
+        /* main content container styling */
+        main {
+            padding: 20px; /* add padding */
+            display: flex; /* use flexbox for layout */
+            justify-content: center; /* center align items horizontally */
+            align-items: flex-start; /* align items at the top vertically */
+            flex-wrap: wrap; /* ensure flex items wrap to the next line */
+            gap: 40px; /* add gap between flex items */
+        }
+
+        /* individual section styling */
+        section {
+            margin-bottom: 40px; /* add bottom margin */
+            padding: 30px; /* add padding */
+            background-color: #fff; /* set background color */
+            border-radius: 10px; /* add border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add box shadow */
+            width: 100%; /* set width to 100% */
+            max-width: 600px; /* set maximum width */
+        }
+
+        /* heading 2 styling */
+        h2 {
+            margin-bottom: 20px; /* add bottom margin */
+            text-align: center; /* center align text */
+        }
+
+        /* biography section styling */
+        .bio {
+            margin-bottom: 20px; /* add bottom margin */
+            text-align: justify; /* justify text */
+        }
+
+        /* featured photo container styling */
+        .photo-container {
+            text-align: center; /* center align text */
+        }
+
+        /* featured photo styling */
+        .photo {
+            border-radius: 50%; /* make the photo circular */
+            width: 300px; /* set width */
+            height: 300px; /* set height */
+            object-fit: cover; /* maintain aspect ratio */
+            border: 4px solid #333; /* add border */
+        }
+
+        /* skills section styling */
+        .skills ul {
+            list-style-type: none; /* remove default list style */
+            margin: 0; /* remove default margin */
+            padding: 0; /* remove default padding */
+            display: flex; /* use flexbox for layout */
+            justify-content: space-around; /* distribute items evenly */
+            flex-wrap: wrap; /* allow items to wrap to next line */
+        }
+
+        /* individual skill item styling */
+        .skills li {
+            width: 200px; /* adjust width of each logo container */
+            height: 150px; /* fixed height for the images */
+            margin-bottom: 30px; /* add bottom margin */
+            text-align: center; /* center align text */
+            display: flex; /* use flexbox for layout */
+            justify-content: center; /* center align horizontally */
+            align-items: center; /* center align vertically */
+        }
+
+        /* skill logo styling */
+        .skills img {
+            max-width: 100%; /* set maximum width */
+            max-height: 100%; /* set maximum height */
+            height: auto; /* maintain aspect ratio */
+            transition: transform 0.3s ease; /* add transition effect */
+        }
+
+        /* hover effect on skill logo */
+        .skills img:hover {
+            transform: scale(1.1); /* scale up on hover */
+        }
+
+        /* projects section styling */
+        .projects div {
+            margin-bottom: 20px; /* add bottom margin */
+        }
+
+        /* footer styling */
+        footer {
+            background-color: #333; /* set background color */
+            color: #fff; /* set text color */
+            padding: 2px; /* add padding */
+            text-align: center; /* center align text */
+            width: 100%; /* set width to 100% */
+
+            bottom: 0; /* align to the bottom */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio: Exploring Technology and Creativity</h1> <!-- portfolio title -->
+    </header>
+    <main>
+        <section class="bio">
+            <h2>Autobiography</h2> <!-- autobiography section -->
+            <p>Hello! I'm Kelvin James A. Beliber, a 19-year-old sophomore studying Computer Science at the University of the Philippines Los Baños. I've always been passionate about technology and problem-solving, which led me to pursue a degree in Computer Science.</p>
+            <p>Throughout my academic journey, I've gained a strong foundation in programming languages like Python, Java, and C. I'm also proficient in web development with HTML and CSS.</p>
+            <p>Outside of academics, I've participated in hackathons and coding competitions, where I enjoy the thrill of innovation and collaboration. I'm eager to apply my skills and contribute to impactful projects in the field of computer science.</p>
+        </section>
+
+        <section class="photo-container">
+            <h2>Featured Photo</h2> <!-- featured photo section -->
+            <img class="photo" src="C:\Users\acer\Desktop\Kelvin.jpg" alt="Featured Photo">
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2> <!-- skills section -->
+            <ul>
+                <li>
+                    <img src="html_logo.png" alt="HTML Logo"> <!-- HTML logo -->
+                </li>
+                <li>
+                    <img src="css_logo.png" alt="CSS Logo"> <!-- CSS logo -->
+                </li>
+                <li>
+                    <img src="python_logo.png" alt="Python"> <!-- Python logo -->
+                </li>
+                <li>
+                    <img src="c_logo.png" alt="C"> <!-- C logo -->
+                </li>
+                <li>
+                    <img src="R_logo.svg" alt="R"> <!-- R logo -->
+                </li>
+                <li>
+                    <img src="java_logo.png" alt="Java"> <!-- Java logo -->
+                </li>
+                <li>
+                    <img src="js_logo.png" alt="JS"> <!-- JavaScript logo -->
+                </li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Previous Projects</h2> <!-- previous projects section -->
+            <div>
+                <h3>Project 1: The Noodle Shop Game (Made using Python)</h3>
+                <p>This project is a text-based game where players manage a virtual noodle shop. It involves elements of resource management, customer service, and strategy.</p>
+            </div>
+            <div>
+                <h3>Project 2: Pace Racers (Made using Java)</h3>
+                <p>Pace Racers is a 2D racing game developed using Java. Players can choose from a variety of vehicles and race against computer-controlled opponents or compete in multiplayer mode.</p>
+            </div>
+            <div>
+                <h3>Project 3: Diet Problem Solver (Made using R)</h3>
+                <p>This project utilizes optimization techniques in R to solve diet-related problems. It helps users create balanced meal plans based on their nutritional needs and preferences.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="font-size: 14px;">&copy; 2024 My Portfolio</p>
+        <p style="font-size: 12px;">Address: Blk 59 Lot 17 Yanson St., Upper Bicutan, Taguig City, Metro Manila, Philippines, 1633</p>
+        <p style="font-size: 12px;">Contact Me: 09983737189</p>
+    </footer>
+
+</body>
+
+</html>
